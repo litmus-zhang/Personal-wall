@@ -1,0 +1,98 @@
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height:100vh;
+
+}
+
+.Info{
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  color: white;
+  width: 600px ;
+  
+}
+
+.image{
+  margin-right: 1rem;
+}
+
+.Info .image img{
+  margin: 0;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+
+.Info .personal{
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  justify-content: start;
+}
+h1{
+  margin: 0;
+}
+
+.personal .title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  margin-top: 8px;
+  padding: 0 1rem;
+  width: 200px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.socials{
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.button-cta{
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  animation: gradientAnimation 4s infinite ;
+  background: linear-gradient( orangered, greenyellow);
+  border: none;
+  border-radius: 5px;
+  filter: brightness(1);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.button-cta:hover{
+  filter: brightness(1.3);
+}
+
+.textarea{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  color: white;
+  text-align: center;
+}
+
+@keyframes gradientAnimation {
+  from{
+    background: linear-gradient(to left, orangered, greenyellow);
+  }
+  to{
+    background: linear-gradient(to left, orange, green);
+    
+  }
+  
+}
